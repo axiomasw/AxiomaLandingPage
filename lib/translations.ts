@@ -17,22 +17,18 @@ export const translations = {
     },
     services: {
       title: "Nuestros Servicios",
-      subtitle: "Soluciones integrales para cada necesidad",
-      webDev: {
-        title: "Desarrollo Web",
-        description: "Aplicaciones web modernas, responsivas y escalables utilizando las últimas tecnologías.",
+      subtitle: "Soluciones digitales que impulsan tu negocio",
+      landingPages: {
+        title: "Landing Pages",
+        description: "P\u00e1ginas web optimizadas para conversi\u00f3n, dise\u00f1adas para captar clientes y generar resultados medibles.",
       },
-      mobileDev: {
-        title: "Aplicaciones Móviles",
-        description: "Apps nativas y multiplataforma para iOS y Android con experiencias excepcionales.",
+      ecommerce: {
+        title: "Ecommerce",
+        description: "Tiendas online completas con sistemas de pago, gesti\u00f3n de inventario y experiencia de compra excepcional.",
       },
-      consulting: {
-        title: "Consultoría Técnica",
-        description: "Asesoramiento experto en arquitectura, migración de sistemas y mejores prácticas.",
-      },
-      maintenance: {
-        title: "Mantenimiento & Soporte",
-        description: "Actualizaciones continuas, monitoreo y soporte técnico para garantizar el rendimiento óptimo.",
+      customSoftware: {
+        title: "Software Personalizado",
+        description: "Desarrollo de aplicaciones a medida para resolver necesidades espec\u00edficas de tu empresa y optimizar procesos.",
       },
     },
     projects: {
@@ -76,22 +72,18 @@ export const translations = {
     },
     services: {
       title: "Our Services",
-      subtitle: "Comprehensive solutions for every need",
-      webDev: {
-        title: "Web Development",
-        description: "Modern, responsive and scalable web applications using the latest technologies.",
+      subtitle: "Digital solutions that drive your business",
+      landingPages: {
+        title: "Landing Pages",
+        description: "Conversion-optimized web pages designed to capture customers and generate measurable results.",
       },
-      mobileDev: {
-        title: "Mobile Applications",
-        description: "Native and cross-platform apps for iOS and Android with exceptional experiences.",
+      ecommerce: {
+        title: "Ecommerce",
+        description: "Complete online stores with payment systems, inventory management and exceptional shopping experience.",
       },
-      consulting: {
-        title: "Technical Consulting",
-        description: "Expert advice on architecture, system migration and best practices.",
-      },
-      maintenance: {
-        title: "Maintenance & Support",
-        description: "Continuous updates, monitoring and technical support to ensure optimal performance.",
+      customSoftware: {
+        title: "Custom Software",
+        description: "Tailored application development to solve your company's specific needs and optimize processes.",
       },
     },
     projects: {
