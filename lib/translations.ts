@@ -1,5 +1,6 @@
 export const translations = {
   es: {
+    slogan: "La distancia más corta entre el problema y la solución",
     nav: {
       home: "Inicio",
       services: "Servicios",
@@ -10,7 +11,7 @@ export const translations = {
       tagline: "Desarrollo de Software Personalizado",
       title: "Transformamos tus ideas en soluciones digitales innovadoras",
       description:
-        "Especializados en crear aplicaciones web y móviles escalables, diseñadas para impulsar tu negocio al siguiente nivel.",
+        "Especializados en crear aplicaciones web y móviles escalables, diseñadas para impulsar tu negocio al siguiente nivel. La distancia más corta entre el problema y la solución.",
       cta: "Solicita una consulta",
       ctaSecondary: "Ver proyectos",
     },
@@ -58,6 +59,7 @@ export const translations = {
     },
   },
   en: {
+    slogan: "The shortest distance between problem and solution",
     nav: {
       home: "Home",
       services: "Services",
@@ -68,7 +70,7 @@ export const translations = {
       tagline: "Custom Software Development",
       title: "We transform your ideas into innovative digital solutions",
       description:
-        "Specialized in creating scalable web and mobile applications, designed to take your business to the next level.",
+        "Specialized in creating scalable web and mobile applications, designed to take your business to the next level. The shortest distance between problem and solution.",
       cta: "Request a consultation",
       ctaSecondary: "View projects",
     },
