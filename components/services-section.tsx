@@ -1,4 +1,4 @@
-import { Code, Smartphone, Lightbulb, Wrench } from "lucide-react"
+import { Monitor, ShoppingCart, Settings } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { translations, type Language } from "@/lib/translations"
 
@@ -47,6 +47,7 @@ export function ServicesSection({ language }: ServicesSectionProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon
+            const isCenter = index === 1
             return (
               <Card key={index} className="border-border hover:shadow-lg transition-shadow flex flex-col">
                 <CardHeader>

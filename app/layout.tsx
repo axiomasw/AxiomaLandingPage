@@ -8,13 +8,13 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://axioma.com"),
+  metadataBase: new URL("https://axiomasw.com"),
   title: {
     default: "AXIOMA - Desarrollo de Software Personalizado | Custom Software Development",
     template: "%s | AXIOMA",
   },
   description:
-    "Empresa especializada en desarrollo de software personalizado, aplicaciones web y móviles. Transformamos ideas en soluciones digitales innovadoras. Custom software development company specializing in web and mobile applications.",
+    "AXIOMA - La distancia más corta entre el problema y la solución. Empresa especializada en desarrollo de software personalizado, aplicaciones web y móviles escalables. Transformamos ideas en soluciones digitales innovadoras. Custom software development company.",
   keywords: [
     "desarrollo de software",
     "software personalizado",
@@ -40,13 +40,27 @@ export const metadata: Metadata = {
     "desarrollo frontend",
     "desarrollo backend",
     "full stack development",
+    "consulting tecnológico",
+    "transformación digital",
+    "innovación tecnológica",
+    "software a medida",
+    "desarrollo ágil",
+    "soluciones empresariales",
+    "arquitectura de software",
+    "consulting tecnológico",
+    "transformación digital",
+    "innovación tecnológica",
+    "software a medida",
+    "desarrollo ágil",
+    "soluciones empresariales",
+    "arquitectura de software",
   ],
   authors: [{ name: "AXIOMA" }],
   creator: "AXIOMA",
   publisher: "AXIOMA",
   openGraph: {
     title: "AXIOMA - Desarrollo de Software Personalizado",
-    description: "Transformamos tus ideas en soluciones digitales innovadoras con tecnología de vanguardia",
+    description: "La distancia más corta entre el problema y la solución. Transformamos tus ideas en soluciones digitales innovadoras con tecnología de vanguardia",
     type: "website",
     locale: "es_ES",
     alternateLocale: "en_US",
@@ -66,7 +80,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AXIOMA - Desarrollo de Software Personalizado",
-    description: "Transformamos tus ideas en soluciones digitales innovadoras",
+    description: "La distancia más corta entre el problema y la solución. Transformamos tus ideas en soluciones digitales innovadoras",
   },
   alternates: {
     canonical: "/",
@@ -80,19 +94,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
+        url: "/images/axima ico.png",
       },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
+      
     ],
-    apple: "/apple-icon.png",
+    apple: "/images/axima ico.png",
   },
 }
 
