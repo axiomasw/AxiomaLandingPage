@@ -14,6 +14,7 @@ interface SidebarProps {
 export function Sidebar({ language, onLanguageChange }: SidebarProps) {
   const t = translations[language]
   const [activeSection, setActiveSection] = useState("home")
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,7 +48,7 @@ export function Sidebar({ language, onLanguageChange }: SidebarProps) {
     <>
       {/* Botón hamburguesa para móvil */}
       <button
-        className="md:hidden fixed top-4 left-4 z-[60] p-2 rounded-lg transition-all duration-200"
+        className="md:hidden fixed top-4 left-4 z-60 p-2 rounded-lg transition-all duration-200"
         style={{ backgroundColor: '#16191E', color: '#a78bfa' }}
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
@@ -79,9 +80,6 @@ export function Sidebar({ language, onLanguageChange }: SidebarProps) {
           priority
         />
         <p className="text-sm mt-3 leading-relaxed" style={{ color: '#a78bfa' }}>{t.hero.tagline}</p>
-        <p className="text-xs mt-2 italic opacity-75" style={{ color: '#64748b' }}>
-          "{t.slogan}"
-        </p>
       </div>
 
       <nav className="flex-1 p-6">

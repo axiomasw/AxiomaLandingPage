@@ -18,7 +18,7 @@ export function HeroSection({ language }: HeroSectionProps) {
   }, [])
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-8 py-24 relative overflow-hidden bg-background">
+    <section id="home" className="min-h-screen flex items-center justify-center px-8 py-12 relative overflow-hidden bg-background">
       {mounted && (
         <div className="absolute inset-0 grid grid-cols-12 grid-rows-12 gap-16 p-8">
           {Array.from({ length: 144 }).map((_, i) => {
