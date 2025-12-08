@@ -1,4 +1,4 @@
-import { Monitor, ShoppingCart, Settings } from "lucide-react"
+import { Monitor, ShoppingCart, Settings, Wrench } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { translations, type Language } from "@/lib/translations"
 
@@ -11,19 +11,19 @@ export function ServicesSection({ language }: ServicesSectionProps) {
 
   const services = [
     {
-      icon: Code,
+      icon: Monitor,
       title: t.webDev.title,
       price: t.webDev.price,
       features: t.webDev.features,
     },
     {
-      icon: Smartphone,
+      icon: ShoppingCart,
       title: t.mobileDev.title,
       price: t.mobileDev.price,
       features: t.mobileDev.features,
     },
     {
-      icon: Lightbulb,
+      icon: Settings,
       title: t.consulting.title,
       price: t.consulting.price,
       features: t.consulting.features,
@@ -59,7 +59,7 @@ export function ServicesSection({ language }: ServicesSectionProps) {
                     <span className="text-lg text-muted-foreground mr-1">
                       {language === "es" ? "Desde" : "From"}
                     </span>
-                    <span className="text-lg font-semibold text-primary break-words">{service.price}</span>
+                    <span className="text-lg font-semibold text-primary warp-break-words">{service.price}</span>
                   </div>
                 </CardHeader>
                 <CardContent className="flex-1">
