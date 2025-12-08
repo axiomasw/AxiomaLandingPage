@@ -1,4 +1,4 @@
-import { Monitor, ShoppingCart, Settings } from "lucide-react"
+import { Monitor, ShoppingCart, Settings, Code, Smartphone, Lightbulb, Wrench } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { translations, type Language } from "@/lib/translations"
 
@@ -11,7 +11,7 @@ export function ServicesSection({ language }: ServicesSectionProps) {
 
   const services = [
     {
-      icon: Code,
+      icon: Monitor,
       title: t.webDev.title,
       price: t.webDev.price,
       features: t.webDev.features,
@@ -47,27 +47,26 @@ export function ServicesSection({ language }: ServicesSectionProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon
-            const isCenter = index === 1
             return (
-              <Card key={index} className="border-border hover:shadow-lg transition-shadow flex flex-col">
+              <Card key={index} className="border-border hover:shadow-lg transition-shadow flex flex-col group hover:border-[#754AF2]/30">
                 <CardHeader>
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <Icon className="h-6 w-6 text-primary" />
+                  <div className="h-12 w-12 rounded-lg bg-[#754AF2]/10 flex items-center justify-center mb-4 group-hover:bg-[#754AF2]/20 transition-colors">
+                    <Icon className="h-6 w-6 text-[#754AF2]" />
                   </div>
                   <CardTitle className="text-2xl mb-3">{service.title}</CardTitle>
                   <div className="mb-2">
                     <span className="text-lg text-muted-foreground mr-1">
                       {language === "es" ? "Desde" : "From"}
                     </span>
-                    <span className="text-lg font-semibold text-primary break-words">{service.price}</span>
+                    <span className="text-lg font-semibold text-[#754AF2] wrap-break-words">{service.price}</span>
                   </div>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <ul className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start gap-2">
-                        <span className="text-primary mt-1">✓</span>
-                        <span className="text-muted-foreground leading-relaxed">{feature}</span>
+                        <span className="text-[#34D8D6] mt-1">✓</span>
+                        <span className="text-muted-foreground leading-relaxed text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
