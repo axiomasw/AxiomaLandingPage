@@ -13,22 +13,26 @@ export function ServicesSection({ language }: ServicesSectionProps) {
     {
       icon: Code,
       title: t.webDev.title,
-      description: t.webDev.description,
+      price: t.webDev.price,
+      features: t.webDev.features,
     },
     {
       icon: Smartphone,
       title: t.mobileDev.title,
-      description: t.mobileDev.description,
+      price: t.mobileDev.price,
+      features: t.mobileDev.features,
     },
     {
       icon: Lightbulb,
       title: t.consulting.title,
-      description: t.consulting.description,
+      price: t.consulting.price,
+      features: t.consulting.features,
     },
     {
       icon: Wrench,
       title: t.maintenance.title,
-      description: t.maintenance.description,
+      price: t.maintenance.price,
+      features: t.maintenance.features,
     },
   ]
 
@@ -40,19 +44,32 @@ export function ServicesSection({ language }: ServicesSectionProps) {
           <p className="text-xl text-muted-foreground text-pretty">{t.subtitle}</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <Card key={index} className="border-border hover:shadow-lg transition-shadow">
+              <Card key={index} className="border-border hover:shadow-lg transition-shadow flex flex-col">
                 <CardHeader>
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <Icon className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle className="text-2xl">{service.title}</CardTitle>
+                  <CardTitle className="text-2xl mb-3">{service.title}</CardTitle>
+                  <div className="mb-2">
+                    <span className="text-lg text-muted-foreground mr-1">
+                      {language === "es" ? "Desde" : "From"}
+                    </span>
+                    <span className="text-lg font-semibold text-primary break-words">{service.price}</span>
+                  </div>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
+                <CardContent className="flex-1">
+                  <ul className="space-y-3">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-start gap-2">
+                        <span className="text-primary mt-1">✓</span>
+                        <span className="text-muted-foreground leading-relaxed">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </CardContent>
               </Card>
             )

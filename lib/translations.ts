@@ -20,19 +20,47 @@ export const translations = {
       subtitle: "Soluciones integrales para cada necesidad",
       webDev: {
         title: "Desarrollo Web",
-        description: "Aplicaciones web modernas, responsivas y escalables utilizando las últimas tecnologías.",
+        price: "$150.000 /USD",
+        features: [
+          "Sitios web adaptables y modernos",
+          "Diseño personalizado según tus necesidades",
+          "Optimización para motores de búsqueda",
+          "Integración con sistemas de pago",
+          "Panel de administración incluido",
+        ],
       },
       mobileDev: {
         title: "Aplicaciones Móviles",
-        description: "Apps nativas y multiplataforma para iOS y Android con experiencias excepcionales.",
+        price: "$200.000 /USD",
+        features: [
+          "Apps para iOS y Android",
+          "Interfaz intuitiva y atractiva",
+          "Sincronización en la nube",
+          "Notificaciones push",
+          "Publicación en tiendas oficiales",
+        ],
       },
       consulting: {
         title: "Consultoría Técnica",
-        description: "Asesoramiento experto en arquitectura, migración de sistemas y mejores prácticas.",
+        price: "$80.000 /USD",
+        features: [
+          "Análisis de arquitectura de sistemas",
+          "Recomendaciones de mejoras",
+          "Planificación de migraciones",
+          "Revisión de código",
+          "Capacitación a tu equipo",
+        ],
       },
       maintenance: {
         title: "Mantenimiento & Soporte",
-        description: "Actualizaciones continuas, monitoreo y soporte técnico para garantizar el rendimiento óptimo.",
+        price: "$50.000 /USD",
+        features: [
+          "Actualizaciones regulares",
+          "Respaldo de información",
+          "Soporte técnico prioritario",
+          "Monitoreo 24/7",
+          "Reportes mensuales de rendimiento",
+        ],
       },
     },
     projects: {
@@ -91,19 +119,47 @@ export const translations = {
       subtitle: "Comprehensive solutions for every need",
       webDev: {
         title: "Web Development",
-        description: "Modern, responsive and scalable web applications using the latest technologies.",
+        price: "$150.000 /USD",
+        features: [
+          "Modern and responsive websites",
+          "Custom design tailored to your needs",
+          "Search engine optimization",
+          "Payment systems integration",
+          "Admin panel included",
+        ],
       },
       mobileDev: {
         title: "Mobile Applications",
-        description: "Native and cross-platform apps for iOS and Android with exceptional experiences.",
+        price: "$200.000 /USD",
+        features: [
+          "iOS and Android apps",
+          "Intuitive and attractive interface",
+          "Cloud synchronization",
+          "Push notifications",
+          "Official store publication",
+        ],
       },
       consulting: {
         title: "Technical Consulting",
-        description: "Expert advice on architecture, system migration and best practices.",
+        price: "$80.000 /USD",
+        features: [
+          "System architecture analysis",
+          "Improvement recommendations",
+          "Migration planning",
+          "Code review",
+          "Team training",
+        ],
       },
       maintenance: {
         title: "Maintenance & Support",
-        description: "Continuous updates, monitoring and technical support to ensure optimal performance.",
+        price: "$50.000 /USD",
+        features: [
+          "Regular updates",
+          "Data backup",
+          "Priority technical support",
+          "24/7 monitoring",
+          "Monthly performance reports",
+        ],
       },
     },
     projects: {
