@@ -51,7 +51,7 @@ export function ContactSection({ language }: ContactSectionProps) {
   }
 
   return (
-    <section id="contact" className="py-24 px-8 bg-muted/30">
+    <section id="contact" className="py-24 px-8 bg-background">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">{t.title}</h2>

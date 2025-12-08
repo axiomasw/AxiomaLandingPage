@@ -9,12 +9,12 @@ export function Footer({ language }: FooterProps) {
   const t = translations[language].footer
 
   return (
-    <footer className="border-t border-border py-12 px-8">
+    <footer className="border-t border-border py-12 px-8 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-4">
             <Image
-              src="/images/dynamic-axioma-logo-with-stylized-arrow.png"
+              src="/images/Axioma sin fondo.png"
               alt="AXIOMA Logo"
               width={120}
               height={40}

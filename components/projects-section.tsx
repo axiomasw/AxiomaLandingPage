@@ -38,7 +38,7 @@ export function ProjectsSection({ language }: ProjectsSectionProps) {
   ]
 
   return (
-    <section id="projects" className="py-24 px-8">
+    <section id="projects" className="py-24 px-8 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">{t.title}</h2>
