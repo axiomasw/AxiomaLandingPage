@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Globe, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -14,7 +14,28 @@ interface SidebarProps {
 export function Sidebar({ language, onLanguageChange }: SidebarProps) {
   const t = translations[language]
   const [activeSection, setActiveSection] = useState("home")
-  const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "about", "services", "projects", "contact"]
+      const scrollPosition = window.scrollY + 200 
+
+      for (const section of sections) {
+        const element = document.getElementById(section)
+        if (element) {
+          const { offsetTop, offsetHeight } = element
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section)
+            break
+          }
+        }
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    handleScroll() 
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const handleNavClick = (section: string) => {
     setActiveSection(section)
@@ -51,7 +72,7 @@ export function Sidebar({ language, onLanguageChange }: SidebarProps) {
       <div className="p-6 border-b border-gray-800">
         <Image
           src="/images/Axioma sin fondo.png"
-          alt="AXIOMA - Desarrollo de Software Personalizado"
+          alt="AXIOMA Logo"
           width={160}
           height={50}
           className="w-40"
@@ -67,6 +88,7 @@ export function Sidebar({ language, onLanguageChange }: SidebarProps) {
         <ul className="space-y-2">
           {[
             { id: "home", label: t.nav.home },
+            { id: "about", label: t.nav.about },
             { id: "services", label: t.nav.services },
             { id: "projects", label: t.nav.projects },
             { id: "contact", label: t.nav.contact },
@@ -74,29 +96,11 @@ export function Sidebar({ language, onLanguageChange }: SidebarProps) {
             <li key={item.id}>
               <button
                 onClick={() => handleNavClick(item.id)}
-                className={`w-full text-left px-4 py-2 rounded-lg transition-all duration-200 ${
-                  activeSection === item.id 
-                    ? "text-white" 
-                    : "hover:text-white"
+                className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                  activeSection === item.id
+                    ? "bg-primary text-primary-foreground"
+                    : "text-sidebar-foreground/80 hover:bg-primary/20 hover:text-primary"
                 }`}
-                style={{
-                  backgroundColor: activeSection === item.id ? 'rgba(167, 139, 250, 0.15)' : 'transparent',
-                  color: activeSection === item.id ? '#e2e8f0' : '#94a3b8',
-                }}
-                onMouseEnter={(e) => {
-                  if (activeSection !== item.id) {
-                    const target = e.target as HTMLButtonElement;
-                    target.style.backgroundColor = 'rgba(167, 139, 250, 0.08)';
-                    target.style.color = '#cbd5e1';
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (activeSection !== item.id) {
-                    const target = e.target as HTMLButtonElement;
-                    target.style.backgroundColor = 'transparent';
-                    target.style.color = '#94a3b8';
-                  }
-                }}
               >
                 {item.label}
               </button>

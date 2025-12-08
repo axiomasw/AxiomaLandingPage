@@ -5,6 +5,7 @@ export const translations = {
       home: "Inicio",
       services: "Servicios",
       projects: "Proyectos",
+      about: "Quienes somos",
       contact: "Contacto",
     },
     hero: {
@@ -17,24 +18,68 @@ export const translations = {
     },
     services: {
       title: "Nuestros Servicios",
-      subtitle: "Soluciones digitales que impulsan tu negocio",
-      landingPages: {
-        title: "Landing Pages",
-        description: "P\u00e1ginas web optimizadas para conversi\u00f3n, dise\u00f1adas para captar clientes y generar resultados medibles.",
+      subtitle: "Soluciones integrales para cada necesidad",
+      webDev: {
+        title: "Desarrollo Web",
+        price: "$150.000 /USD",
+        features: [
+          "Sitios web adaptables y modernos",
+          "Diseño personalizado según tus necesidades",
+          "Optimización para motores de búsqueda",
+          "Integración con sistemas de pago",
+          "Panel de administración incluido",
+        ],
       },
-      ecommerce: {
-        title: "Ecommerce",
-        description: "Tiendas online completas con sistemas de pago, gesti\u00f3n de inventario y experiencia de compra excepcional.",
+      mobileDev: {
+        title: "Aplicaciones Móviles",
+        price: "$200.000 /USD",
+        features: [
+          "Apps para iOS y Android",
+          "Interfaz intuitiva y atractiva",
+          "Sincronización en la nube",
+          "Notificaciones push",
+          "Publicación en tiendas oficiales",
+        ],
       },
-      customSoftware: {
-        title: "Software Personalizado",
-        description: "Desarrollo de aplicaciones a medida para resolver necesidades espec\u00edficas de tu empresa y optimizar procesos.",
+      consulting: {
+        title: "Consultoría Técnica",
+        price: "$80.000 /USD",
+        features: [
+          "Análisis de arquitectura de sistemas",
+          "Recomendaciones de mejoras",
+          "Planificación de migraciones",
+          "Revisión de código",
+          "Capacitación a tu equipo",
+        ],
+      },
+      maintenance: {
+        title: "Mantenimiento & Soporte",
+        price: "$50.000 /USD",
+        features: [
+          "Actualizaciones regulares",
+          "Respaldo de información",
+          "Soporte técnico prioritario",
+          "Monitoreo 24/7",
+          "Reportes mensuales de rendimiento",
+        ],
       },
     },
     projects: {
       title: "Proyectos Destacados",
       subtitle: "Casos de éxito que generan resultados",
       viewProject: "Ver proyecto",
+    },
+    about: {
+      title: "Quienes somos",
+      subtitle: "Conoce al equipo detrás de AXIOMA",
+      person1: {
+        name: "Nombre Persona 1",
+        description: "Descripción de la primera persona. Experta en desarrollo de software con años de experiencia.",
+      },
+      person2: {
+        name: "Nombre Persona 2",
+        description: "Descripción de la segunda persona. Especialista en diseño y experiencia de usuario.",
+      },
     },
     contact: {
       title: "¿Tienes un proyecto en mente?",
@@ -60,6 +105,7 @@ export const translations = {
       home: "Home",
       services: "Services",
       projects: "Projects",
+      about: "About us",
       contact: "Contact",
     },
     hero: {
@@ -72,24 +118,68 @@ export const translations = {
     },
     services: {
       title: "Our Services",
-      subtitle: "Digital solutions that drive your business",
-      landingPages: {
-        title: "Landing Pages",
-        description: "Conversion-optimized web pages designed to capture customers and generate measurable results.",
+      subtitle: "Comprehensive solutions for every need",
+      webDev: {
+        title: "Web Development",
+        price: "$150.000 /USD",
+        features: [
+          "Modern and responsive websites",
+          "Custom design tailored to your needs",
+          "Search engine optimization",
+          "Payment systems integration",
+          "Admin panel included",
+        ],
       },
-      ecommerce: {
-        title: "Ecommerce",
-        description: "Complete online stores with payment systems, inventory management and exceptional shopping experience.",
+      mobileDev: {
+        title: "Mobile Applications",
+        price: "$200.000 /USD",
+        features: [
+          "iOS and Android apps",
+          "Intuitive and attractive interface",
+          "Cloud synchronization",
+          "Push notifications",
+          "Official store publication",
+        ],
       },
-      customSoftware: {
-        title: "Custom Software",
-        description: "Tailored application development to solve your company's specific needs and optimize processes.",
+      consulting: {
+        title: "Technical Consulting",
+        price: "$80.000 /USD",
+        features: [
+          "System architecture analysis",
+          "Improvement recommendations",
+          "Migration planning",
+          "Code review",
+          "Team training",
+        ],
+      },
+      maintenance: {
+        title: "Maintenance & Support",
+        price: "$50.000 /USD",
+        features: [
+          "Regular updates",
+          "Data backup",
+          "Priority technical support",
+          "24/7 monitoring",
+          "Monthly performance reports",
+        ],
       },
     },
     projects: {
       title: "Featured Projects",
       subtitle: "Success stories that deliver results",
       viewProject: "View project",
+    },
+    about: {
+      title: "About us",
+      subtitle: "Meet the team behind AXIOMA",
+      person1: {
+        name: "Person 1 Name",
+        description: "Description of the first person. Expert in software development with years of experience.",
+      },
+      person2: {
+        name: "Person 2 Name",
+        description: "Description of the second person. Specialist in design and user experience.",
+      },
     },
     contact: {
       title: "Have a project in mind?",

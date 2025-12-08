@@ -11,71 +11,68 @@ export function ServicesSection({ language }: ServicesSectionProps) {
 
   const services = [
     {
-      icon: Monitor,
-      title: t.landingPages.title,
-      description: t.landingPages.description,
+      icon: Code,
+      title: t.webDev.title,
+      price: t.webDev.price,
+      features: t.webDev.features,
     },
     {
-      icon: ShoppingCart,
-      title: t.ecommerce.title,
-      description: t.ecommerce.description,
+      icon: Smartphone,
+      title: t.mobileDev.title,
+      price: t.mobileDev.price,
+      features: t.mobileDev.features,
     },
     {
-      icon: Settings,
-      title: t.customSoftware.title,
-      description: t.customSoftware.description,
+      icon: Lightbulb,
+      title: t.consulting.title,
+      price: t.consulting.price,
+      features: t.consulting.features,
+    },
+    {
+      icon: Wrench,
+      title: t.maintenance.title,
+      price: t.maintenance.price,
+      features: t.maintenance.features,
     },
   ]
 
   return (
-    <section id="services" className="py-8 px-8">
+    <section id="services" className="py-24 px-8 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">{t.title}</h2>
           <p className="text-xl text-muted-foreground text-pretty">{t.subtitle}</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon
             const isCenter = index === 1
             return (
-              <div 
-                key={index} 
-                className={`relative group cursor-pointer transition-all duration-500 hover:scale-105 ${
-                  isCenter ? 'md:-translate-y-4' : ''
-                }`}
-              >
-                {/* Gradient Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#754AF2]/20 via-transparent to-[#34D8D6]/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
-                {/* Main Card */}
-                <div className="relative bg-background/95 backdrop-blur-sm border border-border/50 rounded-2xl p-8 h-full transition-all duration-300 group-hover:border-[#754AF2]/50 group-hover:shadow-2xl group-hover:shadow-[#754AF2]/10">
-                  
-                  {/* Icon Container */}
-                  <div className="relative mb-6">
-                    <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-[#754AF2] to-[#34D8D6] flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="h-8 w-8 text-white" />
-                    </div>
-                    {/* Decorative circles */}
-                    <div className="absolute -top-2 -right-2 h-4 w-4 rounded-full bg-[#34D8D6]/60 animate-pulse" />
-                    <div className="absolute -bottom-2 -left-2 h-3 w-3 rounded-full bg-[#754AF2]/60 animate-pulse delay-500" />
+              <Card key={index} className="border-border hover:shadow-lg transition-shadow flex flex-col">
+                <CardHeader>
+                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Icon className="h-6 w-6 text-primary" />
                   </div>
-
-                  {/* Content */}
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-[#754AF2] transition-colors duration-300">
-                      {service.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed text-base">
-                      {service.description}
-                    </p>
+                  <CardTitle className="text-2xl mb-3">{service.title}</CardTitle>
+                  <div className="mb-2">
+                    <span className="text-lg text-muted-foreground mr-1">
+                      {language === "es" ? "Desde" : "From"}
+                    </span>
+                    <span className="text-lg font-semibold text-primary break-words">{service.price}</span>
                   </div>
-
-                  {/* Bottom accent line */}
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-1 bg-gradient-to-r from-[#754AF2] to-[#34D8D6] rounded-full group-hover:w-20 transition-all duration-500" />
-                </div>
-              </div>
+                </CardHeader>
+                <CardContent className="flex-1">
+                  <ul className="space-y-3">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-start gap-2">
+                        <span className="text-primary mt-1">✓</span>
+                        <span className="text-muted-foreground leading-relaxed">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             )
           })}
         </div>
