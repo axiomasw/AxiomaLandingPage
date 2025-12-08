@@ -17,7 +17,7 @@ export function Sidebar({ language, onLanguageChange }: SidebarProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "services", "projects", "contact"]
+      const sections = ["home", "about", "services", "projects", "contact"]
       const scrollPosition = window.scrollY + 200 
 
       for (const section of sections) {
@@ -60,6 +60,7 @@ export function Sidebar({ language, onLanguageChange }: SidebarProps) {
         <ul className="space-y-2">
           {[
             { id: "home", label: t.nav.home },
+            { id: "about", label: t.nav.about },
             { id: "services", label: t.nav.services },
             { id: "projects", label: t.nav.projects },
             { id: "contact", label: t.nav.contact },

@@ -4,6 +4,7 @@ export const translations = {
       home: "Inicio",
       services: "Servicios",
       projects: "Proyectos",
+      about: "Quienes somos",
       contact: "Contacto",
     },
     hero: {
@@ -39,6 +40,18 @@ export const translations = {
       subtitle: "Casos de éxito que generan resultados",
       viewProject: "Ver proyecto",
     },
+    about: {
+      title: "Quienes somos",
+      subtitle: "Conoce al equipo detrás de AXIOMA",
+      person1: {
+        name: "Nombre Persona 1",
+        description: "Descripción de la primera persona. Experta en desarrollo de software con años de experiencia.",
+      },
+      person2: {
+        name: "Nombre Persona 2",
+        description: "Descripción de la segunda persona. Especialista en diseño y experiencia de usuario.",
+      },
+    },
     contact: {
       title: "¿Tienes un proyecto en mente?",
       description:
@@ -62,6 +75,7 @@ export const translations = {
       home: "Home",
       services: "Services",
       projects: "Projects",
+      about: "About us",
       contact: "Contact",
     },
     hero: {
@@ -96,6 +110,18 @@ export const translations = {
       title: "Featured Projects",
       subtitle: "Success stories that deliver results",
       viewProject: "View project",
+    },
+    about: {
+      title: "About us",
+      subtitle: "Meet the team behind AXIOMA",
+      person1: {
+        name: "Person 1 Name",
+        description: "Description of the first person. Expert in software development with years of experience.",
+      },
+      person2: {
+        name: "Person 2 Name",
+        description: "Description of the second person. Specialist in design and user experience.",
+      },
     },
     contact: {
       title: "Have a project in mind?",
