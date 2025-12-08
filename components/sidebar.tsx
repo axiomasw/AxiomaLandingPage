@@ -48,27 +48,30 @@ export function Sidebar({ language, onLanguageChange }: SidebarProps) {
     <>
       {/* Botón hamburguesa para móvil */}
       <button
-        className="md:hidden fixed top-4 left-4 z-60 p-2 rounded-lg transition-all duration-200"
-        style={{ backgroundColor: '#16191E', color: '#a78bfa' }}
+        className="md:hidden fixed top-4 left-4 z-70 p-3 rounded-lg bg-background/95 backdrop-blur-sm border border-border/50 transition-all duration-200 hover:bg-[#754AF2]/10"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
+        {isOpen ? (
+          <X size={24} className="text-[#754AF2]" />
+        ) : (
+          <Menu size={24} className="text-[#754AF2]" />
+        )}
       </button>
 
       {/* Overlay para móvil */}
       {isOpen && (
         <div 
-          className="md:hidden fixed inset-0 bg-black/50 z-40"
+          className="md:hidden fixed inset-0 bg-black/60 z-45 transition-opacity duration-300"
           onClick={() => setIsOpen(false)}
         />
       )}
 
       {/* Sidebar */}
       <aside 
-        className={`fixed left-0 top-0 h-screen w-64 flex flex-col z-50 transition-transform duration-300 ${
+        className={`fixed left-0 top-0 h-screen w-64 flex flex-col z-60 transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'
-        } bg-background`}
+        } bg-background shadow-2xl md:shadow-none`}
       >
       <div className="p-6 border-b border-gray-800">
         <Image

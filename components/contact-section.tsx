@@ -51,16 +51,21 @@ export function ContactSection({ language }: ContactSectionProps) {
   }
 
   return (
-    <section id="contact" className="py-24 px-8 bg-background">
+    <section id="contact" className="py-12 px-8 bg-background">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">{t.title}</h2>
-          <p className="text-xl text-muted-foreground leading-relaxed text-pretty">{t.description}</p>
+          <p className="text-xl text-[#754AF2] font-semibold leading-relaxed text-pretty">{t.description}</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <Input name="name" placeholder={t.form.name} required className="bg-background border-border" />
+            <Input 
+              name="name" 
+              placeholder={t.form.name} 
+              required 
+              className="bg-background border-border focus:border-[#754AF2] focus:ring-[#754AF2]/20 transition-colors" 
+            />
           </div>
           <div>
             <Input
@@ -68,7 +73,7 @@ export function ContactSection({ language }: ContactSectionProps) {
               type="email"
               placeholder={t.form.email}
               required
-              className="bg-background border-border"
+              className="bg-background border-border focus:border-[#754AF2] focus:ring-[#754AF2]/20 transition-colors"
             />
           </div>
           <div>
@@ -77,14 +82,23 @@ export function ContactSection({ language }: ContactSectionProps) {
               placeholder={t.form.message}
               required
               rows={6}
-              className="bg-background border-border resize-none"
+              className="bg-background border-border focus:border-[#754AF2] focus:ring-[#754AF2]/20 resize-none transition-colors"
             />
           </div>
-          <Button type="submit" size="lg" className="w-full gap-2" disabled={isSubmitting}>
+          <Button 
+            type="submit" 
+            size="lg" 
+            className="w-full gap-2 bg-[#754AF2] hover:bg-[#6939E8] text-white border-0 transition-colors" 
+            disabled={isSubmitting}
+          >
             {isSubmitting ? t.form.sending : t.form.send}
             <Send className="h-4 w-4" />
           </Button>
-          {submitted && <p className="text-center text-sm text-green-500">{t.form.success}</p>}
+          {submitted && (
+            <div className="text-center p-4 rounded-lg bg-[#34D8D6]/10 border border-[#34D8D6]/20">
+              <p className="text-[#34D8D6] font-semibold">{t.form.success}</p>
+            </div>
+          )}
         </form>
       </div>
     </section>
