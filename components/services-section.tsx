@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Monitor, ShoppingCart, Settings, Code, Smartphone, Lightbulb, Wrench } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { translations, type Language } from "@/lib/translations"
@@ -12,7 +13,6 @@ export function ServicesSection({ language }: ServicesSectionProps) {
 
   const services = [
     {
-      icon: Monitor,
       icon: Monitor,
       title: t.webDev.title,
       price: t.webDev.price,
@@ -68,7 +68,6 @@ export function ServicesSection({ language }: ServicesSectionProps) {
                     <span className="mr-1 text-lg text-muted-foreground">
                       {language === "es" ? "Desde" : "From"}
                     </span>
-                    <span className="text-lg font-semibold text-[#754AF2] wrap-break-words">{service.price}</span>
                     <span className="text-lg font-semibold text-[#754AF2] wrap-break-words">{service.price}</span>
                   </div>
                 </CardHeader>
