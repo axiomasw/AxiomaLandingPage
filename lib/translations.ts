@@ -99,11 +99,11 @@ export const translations = {
         linkedin: "https://www.linkedin.com/in/jennifer-jazm%C3%ADn-ledesma-003a0022b/",
       },
       person3: {
-        name: "Equipo de Diseño",
-        description: "Diseñadoras UX/UI especializadas en crear interfaces intuitivas y atractivas. Combinamos creatividad con funcionalidad para diseñar experiencias de usuario excepcionales que conectan emocionalmente con los usuarios.",
-        portfolio: "#",
-        github: "#",
-        linkedin: "#",
+        name: "Matías Scacciante",
+        description: "blablabla",
+        portfolio: "",
+        github: "",
+        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
       },
     },
     contact: {
@@ -224,11 +224,11 @@ export const translations = {
         linkedin: "https://www.linkedin.com/in/jennifer-jazm%C3%ADn-ledesma-003a0022b/",
       },
       person3: {
-        name: "Design Team",
-        description: "UX/UI designers specialized in creating intuitive and attractive interfaces. We combine creativity with functionality to design exceptional user experiences that emotionally connect with users.",
-        portfolio: "#",
-        github: "#",
-        linkedin: "#",
+        name: "Matías Scacciante",
+        description: "UX/UI designer specialized in creating intuitive and attractive interfaces. Combines creativity with functionality to design exceptional user experiences that emotionally connect with users.",
+        portfolio: "",
+        github: "",
+        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
       },
     },
     contact: {
