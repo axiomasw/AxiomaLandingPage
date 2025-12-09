@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Sidebar } from "@/components/sidebar"
+import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { ServicesSection } from "@/components/services-section"
 import { ProjectsSection } from "@/components/projects-section"
@@ -16,8 +16,8 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Sidebar language={language} onLanguageChange={setLanguage} />
-      <main className="md:ml-64 bg-background">
+      <Header language={language} onLanguageChange={setLanguage} />
+      <main className="bg-background">
         <HeroSection language={language} />
         <AboutSection language={language} />
         <ServicesSection language={language} />
