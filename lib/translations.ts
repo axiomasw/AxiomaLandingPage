@@ -92,8 +92,18 @@ export const translations = {
         linkedin: "https://www.linkedin.com/in/luciana-maldonado-75a11b247/",
       },
       person2: {
-        name: "Equipo Backend",
-        description: "Especialistas en desarrollo de sistemas robustos y APIs escalables. Expertas en arquitectura de software, bases de datos y seguridad. Nuestro enfoque en las mejores prácticas garantiza soluciones confiables y eficientes.",
+        name: "Jennifer Ledesma",
+        description: "Ingeniera en sistemas de información, desarrolladora full-stack especializada en crear soluciones robustas y escalables. Experta en arquitectura de software, bases de datos y desarrollo de APIs. Apasionada por construir aplicaciones que resuelven problemas reales.",
+        portfolio: "",
+        github: "https://github.com/Jenn-ledesm01",
+        linkedin: "https://www.linkedin.com/in/jennifer-jazm%C3%ADn-ledesma-003a0022b/",
+      },
+      person3: {
+        name: "Equipo de Diseño",
+        description: "Diseñadoras UX/UI especializadas en crear interfaces intuitivas y atractivas. Combinamos creatividad con funcionalidad para diseñar experiencias de usuario excepcionales que conectan emocionalmente con los usuarios.",
+        portfolio: "#",
+        github: "#",
+        linkedin: "#",
       },
     },
     contact: {
@@ -207,8 +217,18 @@ export const translations = {
         linkedin: "https://linkedin.com/in/luciana-maldonado",
       },
       person2: {
-        name: "Backend Team",
-        description: "Specialists in developing robust systems and scalable APIs. Experts in software architecture, databases and security. Our focus on best practices ensures reliable and efficient solutions.",
+        name: "Jennifer Ledesma",
+        description: "Information Systems Engineer, full-stack developer specialized in creating robust and scalable solutions. Expert in software architecture, databases and API development. Passionate about building applications that solve real problems.",
+        portfolio: "",
+        github: "https://github.com/Jenn-ledesm01",
+        linkedin: "https://www.linkedin.com/in/jennifer-jazm%C3%ADn-ledesma-003a0022b/",
+      },
+      person3: {
+        name: "Design Team",
+        description: "UX/UI designers specialized in creating intuitive and attractive interfaces. We combine creativity with functionality to design exceptional user experiences that emotionally connect with users.",
+        portfolio: "#",
+        github: "#",
+        linkedin: "#",
       },
     },
     contact: {
