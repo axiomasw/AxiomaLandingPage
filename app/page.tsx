@@ -17,7 +17,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       <Sidebar language={language} onLanguageChange={setLanguage} />
-      <main className="ml-64 bg-background">
+      <main className="md:ml-64 bg-background">
         <HeroSection language={language} />
         <AboutSection language={language} />
         <ServicesSection language={language} />
