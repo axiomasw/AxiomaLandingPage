@@ -5,7 +5,7 @@ export const translations = {
       home: "Inicio",
       services: "Servicios",
       projects: "Proyectos",
-      about: "Quienes somos",
+      about: "Quiénes Somos",
       contact: "Contacto",
     },
     hero: {
@@ -18,7 +18,19 @@ export const translations = {
     },
     services: {
       title: "Nuestros Servicios",
-      subtitle: "Soluciones integrales para cada necesidad",
+      subtitle: "Soluciones digitales que impulsan tu negocio",
+      landingPages: {
+        title: "Landing Pages",
+        description: "Páginas web optimizadas para conversión, diseñadas para captar clientes y generar resultados medibles.",
+      },
+      ecommerce: {
+        title: "Ecommerce",
+        description: "Tiendas online completas con sistemas de pago, gestión de inventario y experiencia de compra excepcional.",
+      },
+      customSoftware: {
+        title: "Software Personalizado",
+        description: "Desarrollo de aplicaciones a medida para resolver necesidades específicas de tu empresa y optimizar procesos.",
+      },
       webDev: {
         title: "Desarrollo Web",
         price: "$150.000 /USD",
@@ -70,15 +82,28 @@ export const translations = {
       viewProject: "Ver proyecto",
     },
     about: {
-      title: "Quienes somos",
-      subtitle: "Conoce al equipo detrás de AXIOMA",
+      title: "Quiénes somos",
+      subtitle: "Equipo de ingenieras expertas en desarrollo web",
       person1: {
-        name: "Nombre Persona 1",
-        description: "Descripción de la primera persona. Experta en desarrollo de software con años de experiencia.",
+        name: "Luciana Maldonado",
+        description: "Ingeniera en Sistemas, Frontend Developer y QA con amplia experiencia. Especializada en React, Next.js y testing, transformando ideas complejas en soluciones web excepcionales. Apasionada por crear experiencias digitales que marcan la diferencia.",
+        portfolio: "https://maldonado-luciana-portfolio.vercel.app/",
+        github: "https://github.com/Luu-maldonado",
+        linkedin: "https://www.linkedin.com/in/luciana-maldonado-75a11b247/",
       },
       person2: {
-        name: "Nombre Persona 2",
-        description: "Descripción de la segunda persona. Especialista en diseño y experiencia de usuario.",
+        name: "Jennifer Ledesma",
+        description: "Ingeniera en sistemas de información, desarrolladora full-stack especializada en crear soluciones robustas y escalables. Experta en arquitectura de software, bases de datos y desarrollo de APIs. Apasionada por construir aplicaciones que resuelven problemas reales.",
+        portfolio: "",
+        github: "https://github.com/Jenn-ledesm01",
+        linkedin: "https://www.linkedin.com/in/jennifer-jazm%C3%ADn-ledesma-003a0022b/",
+      },
+      person3: {
+        name: "Matías Scacciante",
+        description: "blablabla",
+        portfolio: "",
+        github: "",
+        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
       },
     },
     contact: {
@@ -118,15 +143,27 @@ export const translations = {
     },
     services: {
       title: "Our Services",
-      subtitle: "Comprehensive solutions for every need",
+      subtitle: "Digital solutions that drive your business",
+      landingPages: {
+        title: "Landing Pages",
+        description: "Conversion-optimized web pages designed to capture customers and generate measurable results.",
+      },
+      ecommerce: {
+        title: "Ecommerce",
+        description: "Complete online stores with payment systems, inventory management and exceptional shopping experience.",
+      },
+      customSoftware: {
+        title: "Custom Software",
+        description: "Tailored application development to solve your company's specific needs and optimize processes.",
+      },
       webDev: {
         title: "Web Development",
         price: "$150.000 /USD",
         features: [
-          "Modern and responsive websites",
-          "Custom design tailored to your needs",
+          "Modern, responsive and scalable web applications",
+          "Custom design according to your needs",
           "Search engine optimization",
-          "Payment systems integration",
+          "Payment system integration",
           "Admin panel included",
         ],
       },
@@ -170,15 +207,28 @@ export const translations = {
       viewProject: "View project",
     },
     about: {
-      title: "About us",
-      subtitle: "Meet the team behind AXIOMA",
+      title: "Who We Are",
+      subtitle: "Team of expert engineers in web development",
       person1: {
-        name: "Person 1 Name",
-        description: "Description of the first person. Expert in software development with years of experience.",
+        name: "Luciana Maldonado",
+        description: "Systems Engineer, Frontend Developer and QA with extensive experience. Specialized in React, Next.js and testing, transforming complex ideas into exceptional web solutions. Passionate about creating digital experiences that make a difference.",
+        portfolio: "https://maldonado-luciana-portfolio.vercel.app/",
+        github: "https://github.com/lucianamaldonado",
+        linkedin: "https://linkedin.com/in/luciana-maldonado",
       },
       person2: {
-        name: "Person 2 Name",
-        description: "Description of the second person. Specialist in design and user experience.",
+        name: "Jennifer Ledesma",
+        description: "Information Systems Engineer, full-stack developer specialized in creating robust and scalable solutions. Expert in software architecture, databases and API development. Passionate about building applications that solve real problems.",
+        portfolio: "",
+        github: "https://github.com/Jenn-ledesm01",
+        linkedin: "https://www.linkedin.com/in/jennifer-jazm%C3%ADn-ledesma-003a0022b/",
+      },
+      person3: {
+        name: "Matías Scacciante",
+        description: "UX/UI designer specialized in creating intuitive and attractive interfaces. Combines creativity with functionality to design exceptional user experiences that emotionally connect with users.",
+        portfolio: "",
+        github: "",
+        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
       },
     },
     contact: {

@@ -95,10 +95,43 @@ export const metadata: Metadata = {
     icon: [
       {
         url: "/images/axima ico.png",
+        sizes: "512x512",
+        type: "image/png",
       },
-      
+      {
+        url: "/images/axima ico.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/images/axima ico.png",
+        sizes: "96x96",
+        type: "image/png",
+      },
+      {
+        url: "/images/axima ico.png",
+        sizes: "48x48",
+        type: "image/png",
+      },
+      {
+        url: "/images/axima ico.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
     ],
-    apple: "/images/axima ico.png",
+    shortcut: [
+      {
+        url: "/images/axima ico.png",
+        type: "image/png",
+      },
+    ],
+    apple: [
+      {
+        url: "/images/axima ico.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
 }
 
@@ -109,6 +142,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="dark">
+      <head>
+        <link rel="icon" type="image/png" sizes="512x512" href="/images/axima ico.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/images/axima ico.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/images/axima ico.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/images/axima ico.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/axima ico.png" />
+        <link rel="shortcut icon" href="/images/axima ico.png" />
+        <link rel="apple-touch-icon" href="/images/axima ico.png" />
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />

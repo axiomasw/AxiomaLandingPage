@@ -61,7 +61,7 @@ export function HeroSection({ language }: HeroSectionProps) {
           </Button>
           <Button
             size="lg"
-            className="border-[#34D8D6] text-[#34D8D6] hover:bg-[#34D8D6] hover:text-black"
+            className="border-[#34D8D6] text-[#34D8D6] hover:bg-[#34D8D6] hover:text-white"
             variant="outline"
             onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
           >
