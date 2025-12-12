@@ -19,61 +19,30 @@ export const translations = {
     services: {
       title: "Nuestros Servicios",
       subtitle: "Soluciones digitales que impulsan tu negocio",
-      landingPages: {
-        title: "Landing Pages",
-        description: "Páginas web optimizadas para conversión, diseñadas para captar clientes y generar resultados medibles.",
+      landingPage: {
+        title: "Landing Page",
+        price: "$150.000 /USD",
+        description: "Páginas web optimizadas para conversión, diseñadas para captar clientes y generar resultados medibles. Incluye diseño responsive, integración con formularios de contacto y análisis de conversión.",
       },
       ecommerce: {
         title: "Ecommerce",
-        description: "Tiendas online completas con sistemas de pago, gestión de inventario y experiencia de compra excepcional.",
+        price: "$200.000 /USD",
+        description: "Tiendas online completas con sistemas de pago, gestión de inventario y experiencia de compra excepcional. Plataforma escalable con panel de administración y múltiples métodos de pago.",
       },
       customSoftware: {
         title: "Software Personalizado",
-        description: "Desarrollo de aplicaciones a medida para resolver necesidades específicas de tu empresa y optimizar procesos.",
-      },
-      webDev: {
-        title: "Desarrollo Web",
-        price: "$150.000 /USD",
-        features: [
-          "Sitios web adaptables y modernos",
-          "Diseño personalizado según tus necesidades",
-          "Optimización para motores de búsqueda",
-          "Integración con sistemas de pago",
-          "Panel de administración incluido",
-        ],
-      },
-      mobileDev: {
-        title: "Aplicaciones Móviles",
-        price: "$200.000 /USD",
-        features: [
-          "Apps para iOS y Android",
-          "Interfaz intuitiva y atractiva",
-          "Sincronización en la nube",
-          "Notificaciones push",
-          "Publicación en tiendas oficiales",
-        ],
+        price: "$250.000 /USD",
+        description: "Desarrollo de aplicaciones a medida para resolver necesidades específicas de tu empresa y optimizar procesos. Soluciones escalables adaptadas a tus requerimientos únicos.",
       },
       consulting: {
         title: "Consultoría Técnica",
         price: "$80.000 /USD",
-        features: [
-          "Análisis de arquitectura de sistemas",
-          "Recomendaciones de mejoras",
-          "Planificación de migraciones",
-          "Revisión de código",
-          "Capacitación a tu equipo",
-        ],
+        description: "Análisis de arquitectura de sistemas, recomendaciones de mejoras, planificación de migraciones y revisión de código. Asesoramiento especializado para optimizar tu infraestructura tecnológica.",
       },
       maintenance: {
-        title: "Mantenimiento & Soporte",
+        title: "Mantenimiento y Soporte",
         price: "$50.000 /USD",
-        features: [
-          "Actualizaciones regulares",
-          "Respaldo de información",
-          "Soporte técnico prioritario",
-          "Monitoreo 24/7",
-          "Reportes mensuales de rendimiento",
-        ],
+        description: "Actualizaciones regulares, respaldo de información, soporte técnico prioritario y monitoreo 24/7. Mantén tu aplicación funcionando de manera óptima con nuestro servicio continuo.",
       },
     },
     projects: {
@@ -144,61 +113,30 @@ export const translations = {
     services: {
       title: "Our Services",
       subtitle: "Digital solutions that drive your business",
-      landingPages: {
-        title: "Landing Pages",
-        description: "Conversion-optimized web pages designed to capture customers and generate measurable results.",
+      landingPage: {
+        title: "Landing Page",
+        price: "$150.000 /USD",
+        description: "Conversion-optimized web pages designed to capture customers and generate measurable results. Includes responsive design, contact form integration and conversion analytics.",
       },
       ecommerce: {
         title: "Ecommerce",
-        description: "Complete online stores with payment systems, inventory management and exceptional shopping experience.",
+        price: "$200.000 /USD",
+        description: "Complete online stores with payment systems, inventory management and exceptional shopping experience. Scalable platform with admin panel and multiple payment methods.",
       },
       customSoftware: {
         title: "Custom Software",
-        description: "Tailored application development to solve your company's specific needs and optimize processes.",
-      },
-      webDev: {
-        title: "Web Development",
-        price: "$150.000 /USD",
-        features: [
-          "Modern, responsive and scalable web applications",
-          "Custom design according to your needs",
-          "Search engine optimization",
-          "Payment system integration",
-          "Admin panel included",
-        ],
-      },
-      mobileDev: {
-        title: "Mobile Applications",
-        price: "$200.000 /USD",
-        features: [
-          "iOS and Android apps",
-          "Intuitive and attractive interface",
-          "Cloud synchronization",
-          "Push notifications",
-          "Official store publication",
-        ],
+        price: "$250.000 /USD",
+        description: "Tailored application development to solve your company's specific needs and optimize processes. Scalable solutions adapted to your unique requirements.",
       },
       consulting: {
         title: "Technical Consulting",
         price: "$80.000 /USD",
-        features: [
-          "System architecture analysis",
-          "Improvement recommendations",
-          "Migration planning",
-          "Code review",
-          "Team training",
-        ],
+        description: "System architecture analysis, improvement recommendations, migration planning and code review. Specialized advice to optimize your technological infrastructure.",
       },
       maintenance: {
         title: "Maintenance & Support",
         price: "$50.000 /USD",
-        features: [
-          "Regular updates",
-          "Data backup",
-          "Priority technical support",
-          "24/7 monitoring",
-          "Monthly performance reports",
-        ],
+        description: "Regular updates, data backup, priority technical support and 24/7 monitoring. Keep your application running optimally with our continuous service.",
       },
     },
     projects: {
