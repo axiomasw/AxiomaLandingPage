@@ -49,6 +49,19 @@ export const translations = {
       title: "Proyectos Destacados",
       subtitle: "Casos de éxito que generan resultados",
       viewProject: "Ver proyecto",
+      viewDemo: "Ver demo",
+      ecommerceDaniela: {
+        title: "Ecommerce Daniela Krown",
+        description: "Tienda online completa con catálogo de productos, carrito de compras, gestión de inventario y múltiples métodos de pago. Plataforma e-commerce moderna y funcional para venta de cremas naturales, indumentaria y servicios de estética.",
+      },
+      landingDaniela: {
+        title: "Landing Page Daniela Krown",
+        description: "Sitio web profesional para centro de estética especializado en micropigmentación y micropuntura. Diseño elegante que presenta servicios, cremas naturales veganas y sistema de reserva de turnos.",
+      },
+      escuelaPasteleria: {
+        title: "Escuela de Alta Pastelería",
+        description: "Plataforma web institucional para escuela de pastelería con información sobre cursos, programas educativos, galería de trabajos de alumnos y sistema de inscripciones online.",
+      },
     },
     about: {
       title: "Quiénes somos",
@@ -143,6 +156,19 @@ export const translations = {
       title: "Featured Projects",
       subtitle: "Success stories that deliver results",
       viewProject: "View project",
+      viewDemo: "View demo",
+      ecommerceDaniela: {
+        title: "Daniela Krown Ecommerce",
+        description: "Complete online store with product catalog, shopping cart, inventory management and multiple payment methods. Modern and functional e-commerce platform for natural creams, clothing and aesthetic services.",
+      },
+      landingDaniela: {
+        title: "Daniela Krown Landing Page",
+        description: "Professional website for aesthetic center specialized in micropigmentation and micropuncture. Elegant design showcasing services, natural vegan creams and appointment booking system.",
+      },
+      escuelaPasteleria: {
+        title: "High Pastry School",
+        description: "Institutional web platform for pastry school with information about courses, educational programs, student work gallery and online registration system.",
+      },
     },
     about: {
       title: "Who We Are",

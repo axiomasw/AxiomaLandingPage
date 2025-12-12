@@ -1,8 +1,9 @@
 import React, { useState } from "react"
-import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react"
+import { ExternalLink, ChevronLeft, ChevronRight, Play } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { translations, type Language } from "@/lib/translations"
+import Link from "next/link"
 
 interface ProjectsSectionProps {
   language: Language
@@ -14,28 +15,22 @@ export function ProjectsSection({ language }: ProjectsSectionProps) {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description:
-        language === "es"
-          ? "Plataforma completa de comercio electrónico con gestión de inventario y pagos en línea"
-          : "Complete e-commerce platform with inventory management and online payments",
-      image: "/modern-ecommerce-dashboard.png",
+      title: t.ecommerceDaniela.title,
+      description: t.ecommerceDaniela.description,
+      image: "/images/EcommerceDaniela.png",
+      url: "https://tienda.danielakrown.com/",
     },
     {
-      title: "Healthcare Management System",
-      description:
-        language === "es"
-          ? "Sistema integral para gestión de pacientes, citas y registros médicos electrónicos"
-          : "Comprehensive system for patient management, appointments and electronic medical records",
-      image: "/healthcare-management-interface.jpg",
+      title: t.landingDaniela.title,
+      description: t.landingDaniela.description,
+      image: "/images/LandingDaniela.png",
+      url: "https://danielakrown.com/",
     },
     {
-      title: "Financial Analytics Dashboard",
-      description:
-        language === "es"
-          ? "Dashboard interactivo con análisis en tiempo real y visualización de datos financieros"
-          : "Interactive dashboard with real-time analytics and financial data visualization",
-      image: "/financial-analytics-dashboard.png",
+      title: t.escuelaPasteleria.title,
+      description: t.escuelaPasteleria.description,
+      image: "/images/EscuelaPasteleria.png",
+      url: "https://www.escueladepasteleriaef.com/inicio",
     },
   ]
 
@@ -48,11 +43,11 @@ export function ProjectsSection({ language }: ProjectsSectionProps) {
   }
 
   return (
-    <section id="projects" className="py-12 px-8 bg-background">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">{t.title}</h2>
-          <p className="text-xl text-[#754AF2] font-semibold text-pretty">{t.subtitle}</p>
+    <section id="projects" className="py-12 px-4 sm:px-6 md:px-8 bg-background">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">{t.title}</h2>
+          <p className="text-lg sm:text-xl text-[#754AF2] font-semibold text-pretty">{t.subtitle}</p>
         </div>
 
         {/* Carousel Container */}
@@ -60,46 +55,77 @@ export function ProjectsSection({ language }: ProjectsSectionProps) {
           {/* Navigation Arrows */}
           <button
             onClick={prevProject}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 p-3 rounded-full bg-[#754AF2]/10 hover:bg-[#754AF2]/20 transition-colors backdrop-blur-sm"
+            className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 sm:p-3 rounded-full bg-[#754AF2]/10 hover:bg-[#754AF2]/20 transition-colors backdrop-blur-sm"
             aria-label="Proyecto anterior"
           >
-            <ChevronLeft className="h-6 w-6 text-[#754AF2]" />
+            <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6 text-[#754AF2]" />
           </button>
           
           <button
             onClick={nextProject}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 p-3 rounded-full bg-[#754AF2]/10 hover:bg-[#754AF2]/20 transition-colors backdrop-blur-sm"
+            className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 sm:p-3 rounded-full bg-[#754AF2]/10 hover:bg-[#754AF2]/20 transition-colors backdrop-blur-sm"
             aria-label="Siguiente proyecto"
           >
-            <ChevronRight className="h-6 w-6 text-[#754AF2]" />
+            <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6 text-[#754AF2]" />
           </button>
 
           {/* Project Card */}
-          <div className="px-16">
-            <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300 border-[#754AF2]/20 hover:border-[#754AF2]/40 max-w-4xl mx-auto">
-              <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-[#754AF2]/10 to-[#34D8D6]/10">
+          <div className="px-8 sm:px-12 md:px-16 lg:px-20">
+            <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300 border-[#754AF2]/20 hover:border-[#754AF2]/40 max-w-6xl mx-auto">
+              <div 
+                className="aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] relative overflow-hidden bg-gradient-to-br from-[#754AF2]/10 to-[#34D8D6]/10 cursor-pointer"
+                onClick={() => window.open(projects[currentProject].url, '_blank', 'noopener,noreferrer')}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault()
+                    window.open(projects[currentProject].url, '_blank', 'noopener,noreferrer')
+                  }
+                }}
+                aria-label={`Visitar ${projects[currentProject].title}`}
+              >
                 <img
                   src={projects[currentProject].image || "/placeholder.svg"}
                   alt={projects[currentProject].title}
-                  className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                  className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-500"
                 />
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                {/* Click indicator */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="bg-[#754AF2]/90 text-white px-6 py-3 rounded-full flex items-center gap-2 shadow-lg">
+                    <span className="font-semibold">{t.viewProject}</span>
+                    <ExternalLink className="h-5 w-5" />
+                  </div>
+                </div>
               </div>
-              <CardContent className="p-8">
-                <h3 className="text-3xl font-bold mb-4 text-foreground group-hover:text-[#754AF2] transition-colors">
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-foreground group-hover:text-[#754AF2] transition-colors">
                   {projects[currentProject].title}
                 </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed text-lg max-w-2xl">
+                <p className="text-muted-foreground mb-6 leading-relaxed text-base sm:text-lg max-w-2xl">
                   {projects[currentProject].description}
                 </p>
-                <Button 
-                  variant="outline" 
-                  className="border-[#754AF2]/30 text-[#754AF2] hover:bg-[#754AF2] hover:text-white transition-all duration-300 gap-2 group/btn"
-                >
-                  {t.viewProject}
-                  <ExternalLink className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                </Button>
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                  <Button 
+                    variant="outline" 
+                    className="border-[#754AF2]/30 text-[#754AF2] hover:bg-[#754AF2] hover:text-white transition-all duration-300 gap-2 group/btn"
+                    onClick={() => window.open(projects[currentProject].url, '_blank', 'noopener,noreferrer')}
+                  >
+                    {t.viewProject}
+                    <ExternalLink className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </Button>
+                  <Link href="/demo">
+                    <Button 
+                      variant="outline" 
+                      className="w-full sm:w-auto border-[#34D8D6]/30 text-[#34D8D6] hover:bg-[#34D8D6] hover:text-white transition-all duration-300 gap-2 group/btn"
+                    >
+                      {t.viewDemo}
+                      <Play className="h-4 w-4 group-hover/btn:scale-110 transition-transform" />
+                    </Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>
