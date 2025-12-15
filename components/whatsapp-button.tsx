@@ -2,7 +2,7 @@
 
 export function WhatsAppButton() {
   // Reemplaza este número con tu número de WhatsApp (formato: código de país + número sin espacios ni símbolos)
-  const phoneNumber = "2617543866" // Ejemplo: Argentina +54 9 11 2345-6789
+  const phoneNumber = "2635034144" // Ejemplo: Argentina +54 9 11 2345-6789
   const message = encodeURIComponent("Hola, me gustaría obtener más información sobre sus servicios.")
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
 
