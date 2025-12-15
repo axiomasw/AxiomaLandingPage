@@ -83,7 +83,7 @@ export const translations = {
     },
     about: {
       title: "Quiénes somos",
-      subtitle: "Equipo de ingenieras expertas en desarrollo web",
+      subtitle: "Equipo de ingenieros expertos en desarrollo web",
       person1: {
         name: "Luciana Maldonado",
         description: "Ingeniera en Sistemas, Frontend Developer y QA con amplia experiencia. Especializada en React, Next.js y testing, transformando ideas complejas en soluciones web excepcionales. Apasionada por crear experiencias digitales que marcan la diferencia.",
@@ -92,19 +92,20 @@ export const translations = {
         linkedin: "https://www.linkedin.com/in/luciana-maldonado-75a11b247/",
       },
       person2: {
+        name: "Matías Scacciante",
+        description: "Ingeniero en Sistemas de Información y desarrollador full stack, con sólida experiencia en diseño de arquitecturas de software, bases de datos y desarrollo de APIs. Con orientación a resolver problemas complejos mediante soluciones robustas y bien diseñadas.",
+        portfolio: "",
+        github: "https://github.com/MatiasScacciante",
+        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
+      },
+      person3: {
         name: "Jennifer Ledesma",
         description: "Ingeniera en sistemas de información, desarrolladora full-stack especializada en crear soluciones robustas y escalables. Experta en arquitectura de software, bases de datos y desarrollo de APIs. Apasionada por construir aplicaciones que resuelven problemas reales.",
         portfolio: "",
         github: "https://github.com/Jenn-ledesm01",
         linkedin: "https://www.linkedin.com/in/jennifer-jazm%C3%ADn-ledesma-003a0022b/",
       },
-      person3: {
-        name: "Matías Scacciante",
-        description: "blablabla",
-        portfolio: "",
-        github: "",
-        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
-      },
+
     },
     contact: {
       title: "¿Tienes un proyecto en mente?",
@@ -217,19 +218,20 @@ export const translations = {
         linkedin: "https://linkedin.com/in/luciana-maldonado",
       },
       person2: {
+        name: "Matías Scacciante",
+        description: "Information Systems Engineer and full-stack developer, with solid experience in software architecture design, database systems, and API development. Focused on solving complex problems through robust, well-designed solutions.",
+        portfolio: "",
+        github: "https://github.com/MatiasScacciante",
+        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
+      },
+      person3: {
         name: "Jennifer Ledesma",
         description: "Information Systems Engineer, full-stack developer specialized in creating robust and scalable solutions. Expert in software architecture, databases and API development. Passionate about building applications that solve real problems.",
         portfolio: "",
         github: "https://github.com/Jenn-ledesm01",
         linkedin: "https://www.linkedin.com/in/jennifer-jazm%C3%ADn-ledesma-003a0022b/",
       },
-      person3: {
-        name: "Matías Scacciante",
-        description: "UX/UI designer specialized in creating intuitive and attractive interfaces. Combines creativity with functionality to design exceptional user experiences that emotionally connect with users.",
-        portfolio: "",
-        github: "",
-        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
-      },
+
     },
     contact: {
       title: "Have a project in mind?",
