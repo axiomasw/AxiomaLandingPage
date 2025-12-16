@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useSearchParams } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
@@ -11,6 +12,8 @@ import Link from "next/link"
 
 export default function DemoPage() {
   const [language, setLanguage] = useState<Language>("es")
+  const searchParams = useSearchParams()
+  const videoSrc = searchParams.get("video") || "/videos/demo.mp4"
 
   return (
     <div className="min-h-screen bg-background">
@@ -45,8 +48,7 @@ export default function DemoPage() {
               controls
               preload="metadata"
             >
-              <source src="/videos/demo.mp4" type="video/mp4" />
-              <source src="/videos/demo.webm" type="video/webm" />
+              <source src={videoSrc} type="video/mp4" />
               {language === "es"
                 ? "Tu navegador no soporta la reproducción de video."
                 : "Your browser does not support video playback."}

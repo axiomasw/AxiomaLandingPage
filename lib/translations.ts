@@ -62,6 +62,10 @@ export const translations = {
         title: "Escuela de Alta Pastelería",
         description: "Plataforma web institucional para escuela de pastelería con información sobre cursos, programas educativos, galería de trabajos de alumnos y sistema de inscripciones online.",
       },
+      sistemaGestion: {
+        title: "Gestión DK: Sistema Integral de Administración de Centros de Estética",
+        description: "Plataforma todo-en-uno diseñada para centralizar la operación de negocios de belleza y estética. Permite gestionar de manera ágil el registro de clientes, historial de actividades y servicios prestados, control de caja diaria y cálculo automático de sueldos y comisiones para empleados. Incluye panel de estadísticas visuales para monitorear el rendimiento del negocio, módulo de rendiciones mensuales, control de múltiples métodos de pago y reportes de servicios más vendidos.",
+      },
     },
     about: {
       title: "Quiénes somos",
@@ -170,6 +174,10 @@ export const translations = {
       escuelaPasteleria: {
         title: "High Pastry School",
         description: "Institutional web platform for pastry school with information about courses, educational programs, student work gallery and online registration system.",
+      },
+      sistemaGestion: {
+        title: "Gestión DK: Comprehensive Aesthetic Center Management System",
+        description: "All-in-one platform designed to centralize the operation of beauty and aesthetic businesses. Allows agile management of customer registration, activity history and services provided, daily cash control and automatic calculation of salaries and commissions for employees. Includes visual statistics panel to monitor business performance, monthly reporting module, control of multiple payment methods and reports of best-selling services.",
       },
     },
     about: {

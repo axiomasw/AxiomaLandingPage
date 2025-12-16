@@ -19,18 +19,28 @@ export function ProjectsSection({ language }: ProjectsSectionProps) {
       description: t.ecommerceDaniela.description,
       image: "/images/EcommerceDaniela.png",
       url: "https://tienda.danielakrown.com/",
+      demoVideo: undefined,
     },
     {
       title: t.landingDaniela.title,
       description: t.landingDaniela.description,
       image: "/images/LandingDaniela.png",
       url: "https://danielakrown.com/",
+      demoVideo: undefined,
     },
     {
       title: t.escuelaPasteleria.title,
       description: t.escuelaPasteleria.description,
       image: "/images/EscuelaPasteleria.png",
       url: "https://www.escueladepasteleriaef.com/inicio",
+      demoVideo: undefined,
+    },
+    {
+      title: t.sistemaGestion.title,
+      description: t.sistemaGestion.description,
+      image: undefined,
+      url: "#",
+      demoVideo: "/videos/Video gestion.mp4",
     },
   ]
 
@@ -73,32 +83,42 @@ export function ProjectsSection({ language }: ProjectsSectionProps) {
           <div className="px-8 sm:px-12 md:px-16 lg:px-20">
             <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300 border-[#754AF2]/20 hover:border-[#754AF2]/40 max-w-6xl mx-auto">
               <div 
-                className="aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] relative overflow-hidden bg-gradient-to-br from-[#754AF2]/10 to-[#34D8D6]/10 cursor-pointer"
-                onClick={() => window.open(projects[currentProject].url, '_blank', 'noopener,noreferrer')}
-                role="button"
-                tabIndex={0}
+                className={`aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9] relative overflow-hidden bg-gradient-to-br from-[#754AF2]/10 to-[#34D8D6]/10 ${projects[currentProject].url !== "#" ? "cursor-pointer" : ""}`}
+                onClick={() => {
+                  if (projects[currentProject].url !== "#") {
+                    window.open(projects[currentProject].url, '_blank', 'noopener,noreferrer')
+                  }
+                }}
+                role={projects[currentProject].url !== "#" ? "button" : undefined}
+                tabIndex={projects[currentProject].url !== "#" ? 0 : undefined}
                 onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
+                  if (projects[currentProject].url !== "#" && (e.key === 'Enter' || e.key === ' ')) {
                     e.preventDefault()
                     window.open(projects[currentProject].url, '_blank', 'noopener,noreferrer')
                   }
                 }}
-                aria-label={`Visitar ${projects[currentProject].title}`}
+                aria-label={projects[currentProject].url !== "#" ? `Visitar ${projects[currentProject].title}` : undefined}
               >
-                <img
-                  src={projects[currentProject].image || "/placeholder.svg"}
-                  alt={projects[currentProject].title}
-                  className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-500"
-                />
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                {/* Click indicator */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-[#754AF2]/90 text-white px-6 py-3 rounded-full flex items-center gap-2 shadow-lg">
-                    <span className="font-semibold">{t.viewProject}</span>
-                    <ExternalLink className="h-5 w-5" />
-                  </div>
-                </div>
+                {projects[currentProject].image && (
+                  <img
+                    src={projects[currentProject].image}
+                    alt={projects[currentProject].title}
+                    className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-500"
+                  />
+                )}
+                {/* Overlay gradient - solo si hay URL válida */}
+                {projects[currentProject].url !== "#" && (
+                  <>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    {/* Click indicator */}
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-[#754AF2]/90 text-white px-6 py-3 rounded-full flex items-center gap-2 shadow-lg">
+                        <span className="font-semibold">{t.viewProject}</span>
+                        <ExternalLink className="h-5 w-5" />
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
               <CardContent className="p-6 sm:p-8">
                 <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-foreground group-hover:text-[#754AF2] transition-colors">
@@ -108,23 +128,27 @@ export function ProjectsSection({ language }: ProjectsSectionProps) {
                   {projects[currentProject].description}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <Button 
-                    variant="outline" 
-                    className="border-[#754AF2]/30 text-[#754AF2] hover:bg-[#754AF2] hover:text-white transition-all duration-300 gap-2 group/btn"
-                    onClick={() => window.open(projects[currentProject].url, '_blank', 'noopener,noreferrer')}
-                  >
-                    {t.viewProject}
-                    <ExternalLink className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </Button>
-                  <Link href="/demo">
+                  {projects[currentProject].url !== "#" && (
                     <Button 
                       variant="outline" 
-                      className="w-full sm:w-auto border-[#34D8D6]/30 text-[#34D8D6] hover:bg-[#34D8D6] hover:text-white transition-all duration-300 gap-2 group/btn"
+                      className="border-[#754AF2]/30 text-[#754AF2] hover:bg-[#754AF2] hover:text-white transition-all duration-300 gap-2 group/btn"
+                      onClick={() => window.open(projects[currentProject].url, '_blank', 'noopener,noreferrer')}
                     >
-                      {t.viewDemo}
-                      <Play className="h-4 w-4 group-hover/btn:scale-110 transition-transform" />
+                      {t.viewProject}
+                      <ExternalLink className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                     </Button>
-                  </Link>
+                  )}
+                  {projects[currentProject].demoVideo && (
+                    <Link href={`/demo?video=${encodeURIComponent(projects[currentProject].demoVideo!)}`}>
+                      <Button 
+                        variant="outline" 
+                        className="w-full sm:w-auto border-[#34D8D6]/30 text-[#34D8D6] hover:bg-[#34D8D6] hover:text-white transition-all duration-300 gap-2 group/btn"
+                      >
+                        {t.viewDemo}
+                        <Play className="h-4 w-4 group-hover/btn:scale-110 transition-transform" />
+                      </Button>
+                    </Link>
+                  )}
                 </div>
               </CardContent>
             </Card>
