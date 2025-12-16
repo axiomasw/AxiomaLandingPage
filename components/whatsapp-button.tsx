@@ -13,7 +13,7 @@ export function WhatsAppButton() {
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[100] flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-[#754AF2] hover:bg-[#6939E8] text-white rounded-full shadow-2xl hover:shadow-[#754AF2]/50 transition-all duration-300 hover:scale-110 group"
       aria-label="Contactar por WhatsApp"
-      style={{ 
+      style={{
         boxShadow: '0 4px 20px rgba(117, 74, 242, 0.4)',
       }}
     >
