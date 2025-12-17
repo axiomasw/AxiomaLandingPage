@@ -38,7 +38,7 @@ export function ProjectsSection({ language }: ProjectsSectionProps) {
     {
       title: t.sistemaGestion.title,
       description: t.sistemaGestion.description,
-      image: undefined,
+      image: "/images/DKGestion.jpeg",
       url: "#",
       demoVideo: "/videos/Video gestion.mp4",
     },
