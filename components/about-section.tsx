@@ -32,7 +32,7 @@ export function AboutSection({ language }: AboutSectionProps) {
     {
       name: t.person3.name,
       description: t.person3.description,
-      image: "/images/Foto jenn.jpeg",
+      image: "/Jenn.png",
       portfolio: t.person3.portfolio,
       github: t.person3.github,
       linkedin: t.person3.linkedin,
