@@ -19,7 +19,7 @@ export async function POST(request: Request) {
     try {
       const { data, error } = await resend.emails.send({
         from: 'AXIOMA Contact <onboarding@resend.dev>',
-        to: ['axiomasw@gmail.com'],
+        to: [process.env.CONTACT_EMAIL || 'axiomasw@gmail.com'],
         subject: `Nuevo contacto desde la web - ${name}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
