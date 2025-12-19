@@ -160,6 +160,7 @@ export default function RootLayout({
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-MM3RXH22');`}
         </Script>
+        
         {/* End Google Tag Manager */}
       </head>
       <body className={`font-sans antialiased`}>
