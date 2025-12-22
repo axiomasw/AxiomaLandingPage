@@ -15,6 +15,7 @@ interface ContactSectionProps {
 
 export function ContactSection({ language }: ContactSectionProps) {
   const t = translations[language].contact
+  
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
 
