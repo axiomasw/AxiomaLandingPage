@@ -31,7 +31,7 @@ export const translations = {
       },
       customSoftware: {
         title: "Software Personalizado",
-        price: "1000 USD",
+        price: "1.000 USD",
         description: "Desarrollo de aplicaciones a medida para resolver necesidades específicas de tu empresa y optimizar procesos. Soluciones escalables adaptadas a tus requerimientos únicos.",
       },
       consulting: {
@@ -144,7 +144,7 @@ export const translations = {
       },
       customSoftware: {
         title: "Custom Software",
-        price: "1000 USD",
+        price: "1.000 USD",
         description: "Tailored application development to solve your company's specific needs and optimize processes. Scalable solutions adapted to your unique requirements.",
       },
       consulting: {
