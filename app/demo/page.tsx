@@ -1,6 +1,7 @@
 "use client"
 
-import { useState } from "react"
+
+import { useState, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -10,7 +11,16 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import type { Language } from "@/lib/translations"
 import Link from "next/link"
 
+
 export default function DemoPage() {
+  return (
+    <Suspense>
+      <DemoPageContent />
+    </Suspense>
+  )
+}
+
+function DemoPageContent() {
   const [language, setLanguage] = useState<Language>("es")
   const searchParams = useSearchParams()
   const videoSrc = searchParams.get("video") || "/videos/demo.mp4"

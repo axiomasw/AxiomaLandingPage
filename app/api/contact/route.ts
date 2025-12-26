@@ -1,25 +1,36 @@
+
 import { NextResponse } from "next/server"
 import { Resend } from "resend"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
+  // Verifica que las variables de entorno estén presentes en runtime
+  const RESEND_API_KEY = process.env.RESEND_API_KEY
+  const CONTACT_EMAIL = process.env.CONTACT_EMAIL
+  if (!RESEND_API_KEY) {
+    return NextResponse.json({ error: "Falta la variable de entorno RESEND_API_KEY. Por favor, configúrala en tu entorno de Netlify o local (.env)." }, { status: 500 })
+  }
+  if (!CONTACT_EMAIL) {
+    return NextResponse.json({ error: "Falta la variable de entorno CONTACT_EMAIL. Por favor, configúrala en tu entorno de Netlify o local (.env)." }, { status: 500 })
+  }
+  const resend = new Resend(RESEND_API_KEY)
+
   try {
     const body = await request.json()
     const { name, email, message } = body
 
-    // Validate fields
+    // Validar campos
     if (!name || !email || !message) {
-      return NextResponse.json({ error: "All fields are required" }, { status: 400 })
+      return NextResponse.json({ error: "Todos los campos son obligatorios" }, { status: 400 })
     }
 
     console.log("Contact form submission:", { name, email, message })
 
-    // Send email using Resend
+    // Enviar email usando Resend
     try {
       const { data, error } = await resend.emails.send({
         from: 'AXIOMA Contact <onboarding@resend.dev>',
-        to: [process.env.CONTACT_EMAIL || 'axiomasw@gmail.com'],
+        to: [CONTACT_EMAIL],
         subject: `Nuevo contacto desde la web - ${name}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -42,20 +53,20 @@ export async function POST(request: Request) {
       })
 
       if (error) {
-        console.error("Error sending email:", error)
-        return NextResponse.json({ error: "Failed to send email" }, { status: 500 })
+        console.error("Error enviando email:", error)
+        return NextResponse.json({ error: "No se pudo enviar el email" }, { status: 500 })
       }
 
-      console.log("Email sent successfully:", data)
+      console.log("Email enviado correctamente:", data)
       return NextResponse.json({ success: true }, { status: 200 })
     } catch (emailError) {
-      console.error("Email service error:", emailError)
-      // Fallback: still return success to user, but log the error
+      console.error("Error en el servicio de email:", emailError)
+      // Fallback: igual retorna éxito al usuario, pero registra el error
       return NextResponse.json({ success: true }, { status: 200 })
     }
 
   } catch (error) {
-    console.error("Error processing contact form:", error)
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 })
+    console.error("Error procesando el formulario de contacto:", error)
+    return NextResponse.json({ error: "Error interno del servidor" }, { status: 500 })
   }
 }
