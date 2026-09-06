@@ -39,7 +39,7 @@ export function AboutSection({ language }: AboutSectionProps) {
           <p className="text-xl text-[#754AF2] font-semibold text-pretty">{t.subtitle}</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {people.map((person, index) => (
             <Card key={index} className="border-border hover:shadow-lg transition-all duration-300 overflow-hidden group hover:border-[#754AF2]/30">
               <div className="relative w-full h-80 bg-linear-to-br from-[#754AF2]/20 to-[#34D8D6]/20 flex items-center justify-center">
