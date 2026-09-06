@@ -78,14 +78,6 @@ export const translations = {
         linkedin: "https://www.linkedin.com/in/luciana-maldonado-75a11b247/",
       },
 
-      person2: {
-        name: "Matías Scacciante",
-        description: "Ingeniero en Sistemas de Información y desarrollador full stack, con sólida experiencia en diseño de arquitecturas de software, bases de datos y desarrollo de APIs. Con orientación a resolver problemas complejos mediante soluciones robustas y bien diseñadas.",
-        portfolio: "",
-        github: "https://github.com/MatiasScacciante",
-        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
-      },
-
       person3: {
         name: "Jennifer Ledesma",
         description: "Ingeniera en sistemas de información, desarrolladora full-stack especializada en crear soluciones robustas y escalables. Experta en arquitectura de software, bases de datos y desarrollo de APIs. Apasionada por construir aplicaciones que resuelven problemas reales.",
@@ -189,14 +181,6 @@ export const translations = {
         portfolio: "https://maldonado-luciana-portfolio.vercel.app/",
         github: "https://github.com/lucianamaldonado",
         linkedin: "https://linkedin.com/in/luciana-maldonado",
-      },
-
-      person2: {
-        name: "Matías Scacciante",
-        description: "Information Systems Engineer and full-stack developer, with solid experience in software architecture design, database systems, and API development. Focused on solving complex problems through robust, well-designed solutions.",
-        portfolio: "",
-        github: "https://github.com/MatiasScacciante",
-        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
       },
 
       person3: {

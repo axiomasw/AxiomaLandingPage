@@ -21,15 +21,6 @@ export function AboutSection({ language }: AboutSectionProps) {
       hasLinks: true,
     },
     {
-      name: t.person2.name,
-      description: t.person2.description,
-      image: "/ScacciantePerfil.png",
-      portfolio: t.person2.portfolio || "",
-      github: t.person2.github || "",
-      linkedin: t.person2.linkedin || "",
-      hasLinks: !!(t.person2.github || t.person2.linkedin || t.person2.portfolio),
-    },
-    {
       name: t.person3.name,
       description: t.person3.description,
       image: "/Jenn.png",
