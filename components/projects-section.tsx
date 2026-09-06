@@ -29,13 +29,6 @@ export function ProjectsSection({ language }: ProjectsSectionProps) {
       demoVideo: undefined,
     },
     {
-      title: t.escuelaPasteleria.title,
-      description: t.escuelaPasteleria.description,
-      image: "/images/EscuelaPasteleria.png",
-      url: "https://www.escueladepasteleriaef.com/inicio",
-      demoVideo: undefined,
-    },
-    {
       title: t.sistemaGestion.title,
       description: t.sistemaGestion.description,
       image: "/images/DKGestion.jpeg",

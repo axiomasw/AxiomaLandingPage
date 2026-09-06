@@ -58,10 +58,6 @@ export const translations = {
         title: "Landing Page Daniela Krown",
         description: "Sitio web profesional para centro de estética especializado en micropigmentación y micropuntura. Diseño elegante que presenta servicios, cremas naturales veganas y sistema de reserva de turnos.",
       },
-      escuelaPasteleria: {
-        title: "Escuela de Alta Pastelería",
-        description: "Plataforma web institucional para escuela de pastelería con información sobre cursos, programas educativos, galería de trabajos de alumnos y sistema de inscripciones online.",
-      },
       sistemaGestion: {
         title: "Gestión DK: Sistema Integral de Administración de Centros de Estética",
         description: "Plataforma todo-en-uno diseñada para centralizar la operación de negocios de belleza y estética. Permite gestionar de manera ágil el registro de clientes, historial de actividades y servicios prestados, control de caja diaria y cálculo automático de sueldos y comisiones para empleados. Incluye panel de estadísticas visuales para monitorear el rendimiento del negocio, módulo de rendiciones mensuales, control de múltiples métodos de pago y reportes de servicios más vendidos.",
@@ -162,10 +158,6 @@ export const translations = {
       landingDaniela: {
         title: "Daniela Krown Landing Page",
         description: "Professional website for aesthetic center specialized in micropigmentation and micropuncture. Elegant design showcasing services, natural vegan creams and appointment booking system.",
-      },
-      escuelaPasteleria: {
-        title: "High Pastry School",
-        description: "Institutional web platform for pastry school with information about courses, educational programs, student work gallery and online registration system.",
       },
       sistemaGestion: {
         title: "Gestión DK: Comprehensive Aesthetic Center Management System",
