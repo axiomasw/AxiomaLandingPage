@@ -58,9 +58,9 @@ export const translations = {
         title: "Landing Page Daniela Krown",
         description: "Sitio web profesional para centro de estética especializado en micropigmentación y micropuntura. Diseño elegante que presenta servicios, cremas naturales veganas y sistema de reserva de turnos.",
       },
-      escuelaPasteleria: {
-        title: "Escuela de Alta Pastelería",
-        description: "Plataforma web institucional para escuela de pastelería con información sobre cursos, programas educativos, galería de trabajos de alumnos y sistema de inscripciones online.",
+      aluled: {
+        title: "Aluled",
+        description: "Sitio web institucional para una empresa mendocina con más de 20 años de trayectoria en vidrio, metal y aluminio. Incluye presentación de servicios (vidriería, metalurgia y aluminio), galería de proyectos realizados, testimonios de clientes y formulario de cotización con integración a WhatsApp.",
       },
       sistemaGestion: {
         title: "Gestión DK: Sistema Integral de Administración de Centros de Estética",
@@ -76,14 +76,6 @@ export const translations = {
         portfolio: "https://maldonado-luciana-portfolio.vercel.app/",
         github: "https://github.com/Luu-maldonado",
         linkedin: "https://www.linkedin.com/in/luciana-maldonado-75a11b247/",
-      },
-
-      person2: {
-        name: "Matías Scacciante",
-        description: "Ingeniero en Sistemas de Información y desarrollador full stack, con sólida experiencia en diseño de arquitecturas de software, bases de datos y desarrollo de APIs. Con orientación a resolver problemas complejos mediante soluciones robustas y bien diseñadas.",
-        portfolio: "",
-        github: "https://github.com/MatiasScacciante",
-        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
       },
 
       person3: {
@@ -171,9 +163,9 @@ export const translations = {
         title: "Daniela Krown Landing Page",
         description: "Professional website for aesthetic center specialized in micropigmentation and micropuncture. Elegant design showcasing services, natural vegan creams and appointment booking system.",
       },
-      escuelaPasteleria: {
-        title: "High Pastry School",
-        description: "Institutional web platform for pastry school with information about courses, educational programs, student work gallery and online registration system.",
+      aluled: {
+        title: "Aluled",
+        description: "Institutional website for a Mendoza-based company with over 20 years of experience in glass, metal and aluminum. Includes a presentation of services (glasswork, metalwork and aluminum), a gallery of completed projects, client testimonials and a quote request form integrated with WhatsApp.",
       },
       sistemaGestion: {
         title: "Gestión DK: Comprehensive Aesthetic Center Management System",
@@ -189,14 +181,6 @@ export const translations = {
         portfolio: "https://maldonado-luciana-portfolio.vercel.app/",
         github: "https://github.com/lucianamaldonado",
         linkedin: "https://linkedin.com/in/luciana-maldonado",
-      },
-
-      person2: {
-        name: "Matías Scacciante",
-        description: "Information Systems Engineer and full-stack developer, with solid experience in software architecture design, database systems, and API development. Focused on solving complex problems through robust, well-designed solutions.",
-        portfolio: "",
-        github: "https://github.com/MatiasScacciante",
-        linkedin: "https://www.linkedin.com/in/mat%C3%ADas-scacciante-371487171/",
       },
 
       person3: {

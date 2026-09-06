@@ -29,10 +29,10 @@ export function ProjectsSection({ language }: ProjectsSectionProps) {
       demoVideo: undefined,
     },
     {
-      title: t.escuelaPasteleria.title,
-      description: t.escuelaPasteleria.description,
-      image: "/images/EscuelaPasteleria.png",
-      url: "https://www.escueladepasteleriaef.com/inicio",
+      title: t.aluled.title,
+      description: t.aluled.description,
+      image: "/images/Aluled.png",
+      url: "https://www.aluled.com.ar/",
       demoVideo: undefined,
     },
     {
