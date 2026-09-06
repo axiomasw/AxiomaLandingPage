@@ -58,6 +58,10 @@ export const translations = {
         title: "Landing Page Daniela Krown",
         description: "Sitio web profesional para centro de estética especializado en micropigmentación y micropuntura. Diseño elegante que presenta servicios, cremas naturales veganas y sistema de reserva de turnos.",
       },
+      aluled: {
+        title: "Aluled",
+        description: "Sitio web institucional para una empresa mendocina con más de 20 años de trayectoria en vidrio, metal y aluminio. Incluye presentación de servicios (vidriería, metalurgia y aluminio), galería de proyectos realizados, testimonios de clientes y formulario de cotización con integración a WhatsApp.",
+      },
       sistemaGestion: {
         title: "Gestión DK: Sistema Integral de Administración de Centros de Estética",
         description: "Plataforma todo-en-uno diseñada para centralizar la operación de negocios de belleza y estética. Permite gestionar de manera ágil el registro de clientes, historial de actividades y servicios prestados, control de caja diaria y cálculo automático de sueldos y comisiones para empleados. Incluye panel de estadísticas visuales para monitorear el rendimiento del negocio, módulo de rendiciones mensuales, control de múltiples métodos de pago y reportes de servicios más vendidos.",
@@ -158,6 +162,10 @@ export const translations = {
       landingDaniela: {
         title: "Daniela Krown Landing Page",
         description: "Professional website for aesthetic center specialized in micropigmentation and micropuncture. Elegant design showcasing services, natural vegan creams and appointment booking system.",
+      },
+      aluled: {
+        title: "Aluled",
+        description: "Institutional website for a Mendoza-based company with over 20 years of experience in glass, metal and aluminum. Includes a presentation of services (glasswork, metalwork and aluminum), a gallery of completed projects, client testimonials and a quote request form integrated with WhatsApp.",
       },
       sistemaGestion: {
         title: "Gestión DK: Comprehensive Aesthetic Center Management System",

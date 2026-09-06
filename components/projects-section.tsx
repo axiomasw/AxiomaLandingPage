@@ -29,6 +29,13 @@ export function ProjectsSection({ language }: ProjectsSectionProps) {
       demoVideo: undefined,
     },
     {
+      title: t.aluled.title,
+      description: t.aluled.description,
+      image: "/images/Aluled.png",
+      url: "https://www.aluled.com.ar/",
+      demoVideo: undefined,
+    },
+    {
       title: t.sistemaGestion.title,
       description: t.sistemaGestion.description,
       image: "/images/DKGestion.jpeg",
